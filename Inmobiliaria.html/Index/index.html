@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión - Inmobiliaria Queso</title>
+    <link rel="stylesheet" href="../Styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+       
+        function validarLogin(event) {
+            event.preventDefault(); 
+
+            var correo = document.getElementById("correo").value;
+            var contrasena = document.getElementById("contrasena").value;
+            var mensaje = document.getElementById("mensaje");
+
+            
+            mensaje.style.display = "none";
+            mensaje.classList.remove("error", "exito");
+
+          
+            if (correo !== "squezada-2021262@kinal.edu.gt") {
+                mensaje.textContent = "Correo electrónico incorrecto.";
+                mensaje.style.display = "block";
+                mensaje.classList.add("error");
+                return;
+            }
+
+           
+            if (contrasena !== "12345678") {
+                mensaje.textContent = "La contraseña debe ser exactamente '12345678'.";
+                mensaje.style.display = "block";
+                mensaje.classList.add("error");
+                return;
+            }
+
+           
+            mensaje.textContent = "Inicio de sesión exitoso.";
+            mensaje.style.display = "block";
+            mensaje.classList.add("exito");
+
+           
+            setTimeout(function() {
+                window.location.href = "principal.html"; 
+            }, 2000); 
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="../Images/logo.png" alt="Logo" class="login-logo">
+            <h2>Iniciar sesión</h2>
+            <p>Usa tu cuenta de Inmobiliaria Queso</p>
+            <form onsubmit="validarLogin(event)">
+                <input type="email" id="correo" placeholder="Correo electrónico" required>
+                <input type="password" id="contrasena" placeholder="Contraseña" required>
+                <div class="actions">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button type="submit">Siguiente</button>
+                </div>
+            </form>
+
+         
+            <div id="mensaje" class="mensaje"></div>
+        </div>
+    </div>
+
+    <button class="btn-regresar" onclick="history.back()">Regresar</button> <!-- Botón fuera del recuadro -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181726;
+    color: #FFFFFF;
+}
+
+.contacto-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #2A223A;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.contacto-container h1 {
+    font-size: 36px;
+    color: #FF5A2C;
+    margin-bottom: 30px;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 300px;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.icono i {
+    font-size: 20px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+.instagram:hover {
+    background-color: #c13548;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+.whatsapp:hover {
+    background-color: #1ebe5b;
+}
+
+.x {
+    background-color: #000000;
+}
+.x:hover {
+    background-color: #333333;
+}
+
+.email {
+    background-color: #6c63ff;
+}
+.email:hover {
+    background-color: #5148e2;
+}
+
+.btn-regresar {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: transparent;
+    border: 2px solid #FF5A2C;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #FF5A2C;
+    color: #FFFFFF;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: transparent;
+    border: 2px solid #FF5A2C;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #FF5A2C;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: #FF5A2C;
+    color: #FFFFFF;
+}
